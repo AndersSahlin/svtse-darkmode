@@ -1,0 +1,141 @@
+/* ==UserStyle==
+@name           SVT.se Dark Mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.3
+@description    Enables dark mode on SVT.se
+@author         Anders Roos
+@homepageURL    https://github.com/AndersSahlin/svtse-darkmode/
+@supportURL     https://github.com/AndersSahlin/svtse-darkmode/
+@updateURL      https://raw.githubusercontent.com/AndersSahlin/svtse-darkmode/main/svtse-darkmode.user.css
+==/UserStyle== */
+@-moz-document domain("svt.se"),
+domain("www.svt.se") {
+
+    img[class*="Logo__image___"] {
+        filter: brightness(100);
+        /* Header logo */
+    }
+
+    img[alt="SVT-avatar"] {
+        filter: invert(0.15);
+        /* timeline SVT avatar image */
+    }
+
+    :root {
+        --nyh-color-black: #000000;
+        --nyh-color-white: hsl(0, 0%, 20%);
+        /*#ffffff;*/
+        /* Article bg color */
+        --nyh-color-yellow: #ffc346;
+        --nyh-color-red-dark: #b9232d;
+        --nyh-color-red-lightest: #ffebed;
+        --nyh-color-green-lightest: #d2ebd2;
+        --nyh-color-green-light: #82c882;
+        --nyh-color-green-dark: #23821e;
+        --nyh-color-green-darkest: #0f5a0a;
+        --nyh-color-green-accent: #00c800;
+        --nyh-color-orange-accent: #ff912d;
+        --nyh-color-yellow-accent: #fff000;
+        --nyh-color-turquoise: #3cbeb4;
+        --nyh-color-purple-light: #b48ccd;
+        --nyh-color-purple-dark: #641e78;
+        --nyh-color-blue-lightest: #eaf3fa;
+        --nyh-color-blue-dark: #1e69aa;
+        --nyh-color-grey-lightest: hsl(0, 0%, 22.5%);
+        /*#f5f5f5;*/
+        --nyh-color-grey-lighter: hsl(0, 0%, 32.5%);
+        /*#e1e1e1;*/
+        /* top menu circle bg */
+        --nyh-color-grey-light: hsl(0, 0%, 42.5%);
+        /* #cccccc; */
+        /* top menu circle bg */
+        --nyh-color-grey-medium: hsl(0, 0%, 60%);
+        /*  #737373; */
+        /* article publish date */
+        --nyh-color-grey: hsl(210, 9%, 91.5%);
+        /*#606060;*/
+        /* Time stamp */
+        --nyh-color-grey-dark: hsl(210, 9%, 91.5%);
+        /*#404040;*/
+        --nyh-color-grey-darker: hsl(210, 9%, 91.5%);
+        /*#333333;*/
+        --nyh-color-grey-darkest: hsl(210, 9%, 91.5%);
+        /*#1b1b1b;*/
+        --nyh-color-cool-grey-dark-unthemed: #647378;
+        --nyh-color-cool-grey-extra-dark: #465055;
+        --nyh-color-news: #e02e3d;
+        --nyh-color-news-dark: var(--nyh-color-news);
+        /*#b9232d;*/
+        --nyh-color-play: #00c800;
+        --nyh-color-play-dark: #32a532;
+        --nyh-color-play-darker: var(--nyh-color-play);
+        /*#23821e;*/
+        --nyh-color-sport: #2891c8;
+        --nyh-color-sport-dark: var(--nyh-color-sport);
+        /*#0577b5;*/
+        /* Sport Header */
+        --nyh-color-ug: #ffe200;
+        /*#465055;*/
+        /* Uppdrag Granskning */
+        --nyh-color-facebook: #4267b2;
+        --nyh-color-facebook-dark: #233568;
+        --nyh-color-twitter: #0b7bc1;
+        --nyh-color-twitter-dark: #085c91;
+        --nyh-color-link: #2891c8;
+        /*#1e69aa;*/
+        --nyh-color-background: hsl(0, 0%, 15%);
+        /* #ffffff; */
+        --nyh-color-prio-heading: #606060;
+        --nyh-color-prio-body-text: #e1e1e1;
+        --nyh-color-black-rgb: 0, 0, 0;
+        --nyh-color-white-rgb: 255, 255, 255;
+        --nyh-color-grey-lightest-rgb: 245, 245, 245;
+        --nyh-color-grey-lighter-rgb: 225, 225, 225;
+        --nyh-color-grey-light-rgb: 204, 204, 204;
+        --nyh-color-grey-rgb: 96, 96, 96;
+        --nyh-color-grey-medium-rgb: 115, 115, 115;
+        --nyh-color-grey-darker-rgb: 51, 51, 51;
+        --nyh-color-grey-darkest-rgb: 27, 27, 27;
+        --nyh-color-news-dark-rgb: 185, 35, 45;
+        --nyh-color-white-unthemed: #ffffff;
+        --nyh-color-black-unthemed: #000000;
+        --nyh-color-grey-lightest-unthemed: #f5f5f5;
+        --nyh-color-grey-light-unthemed: #cccccc;
+        --nyh-color-grey-medium-unthemed: #878787;
+        --nyh-color-grey-dark-unthemed: #404040;
+        --nyh-color-grey-darker-unthemed: #333333;
+        --nyh-color-grey-darkest-unthemed: #1b1b1b;
+        --nyh-color-purple-light-unthemed: #b48ccd;
+        --nyh-color-black-rgb-unthemed: 0, 0, 0;
+        --nyh-color-white-rgb-unthemed: 255, 255, 255;
+        --nyh-color-grey-dark-rgb-unthemed: 64, 64, 64;
+        --nyh-color-grey-darkest-rgb-unthemed: 27, 27, 27;
+        --dc-color-extra-dark-purple: #410f5a;
+        --dc-color-dark-purple: hsl(287 65% 48% / 1);
+        /*#641e78;*/
+        /* Highlights direct stream timestamp */
+        --dc-color-medium-purple: #d7d2f0;
+        --dc-color-light-purple: var(--dc-color-extra-light-cool-grey);
+        /* #e7e4f6;*/
+        /* Highlights pinned share bg */
+        --dc-color-extra-light-purple: var(--dc-color-extra-light-cool-grey);
+        /* #f7f6fc;*/
+        /* Highlighs pinned */
+        --dc-color-light-cool-grey: hsl(0, 2%, 15%);
+        /*#d6dfdf;*/
+        /* Chat bubble ext */
+        --dc-color-extra-light-cool-grey: hsl(0, 2%, 15%);
+        /*#f0f3f3;*/
+        /* Highlights direct stream */
+        --dc-color-gray-light: hsl(0, 2%, 11%);
+        /* #f0f3f3;*/
+        /* Chat bubble svt */
+        --dc-color-extra-dark-cool-gray: #465055;
+        --dc-super-extra-extra-dark-cool-gray-unthemed: #2d3437;
+        --dc-color-dark-purple-unthemed: #641e78;
+        --dc-color-light-purple-unthemed: #e7e4f6;
+        --dc-color-extra-dark-cool-gray-unthemed: #465055;
+        --dc-color-gray-light-unthemed: #f0f3f3;
+        --dc-color-grey-darkest-ever: #151515;
+    }
+}
