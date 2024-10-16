@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SVT.se Dark Mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
+@version        1.0.4
 @description    Enables dark mode on SVT.se
 @author         Anders Roos
 @homepageURL    https://github.com/AndersSahlin/svtse-darkmode/
@@ -137,5 +137,9 @@ domain("www.svt.se") {
         --dc-color-extra-dark-cool-gray-unthemed: #465055;
         --dc-color-gray-light-unthemed: #f0f3f3;
         --dc-color-grey-darkest-ever: #151515;
+
+        /* Headline texts */
+        --color-headline: var(--nyh-color-grey-darkest);
+        --color-ug-primary:var(--nyh-color-ug);
     }
 }
