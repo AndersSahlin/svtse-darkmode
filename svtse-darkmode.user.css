@@ -1,12 +1,11 @@
 /* ==UserStyle==
 @name           SVT.se Dark Mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    Enables dark mode on SVT.se
 @author         Anders Roos
 @homepageURL    https://github.com/AndersSahlin/svtse-darkmode/
 @supportURL     https://github.com/AndersSahlin/svtse-darkmode/
-@updateURL      https://raw.githubusercontent.com/AndersSahlin/svtse-darkmode/main/svtse-darkmode.user.css
 ==/UserStyle== */
 @-moz-document domain("svt.se"),
 domain("www.svt.se") {
@@ -22,8 +21,12 @@ domain("www.svt.se") {
     }
 
     :root {
+        --header-background: hsl(0, 0%, 20%);
+        --header-background-dark: hsl(0, 0%, 10%);
+        
+        
         --nyh-color-black: #000000;
-        --nyh-color-white: hsl(0, 0%, 20%);
+        --nyh-color-white: var(--header-background);
         /*#ffffff;*/
         /* Article bg color */
         --nyh-color-yellow: #ffc346;
@@ -141,5 +144,9 @@ domain("www.svt.se") {
         /* Headline texts */
         --color-headline: var(--nyh-color-grey-darkest);
         --color-ug-primary:var(--nyh-color-ug);
+        --color-surface-primary:var(--header-background);
+        
+        /* Tag Header */
+        .TagOverview__root___C9VeQ { background-color:var(--header-background-dark); }
     }
 }
